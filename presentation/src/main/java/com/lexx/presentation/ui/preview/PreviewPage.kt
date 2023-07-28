@@ -3,6 +3,7 @@ package com.lexx.presentation.ui.preview
 import android.net.Uri
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.lazy.LazyColumn
@@ -24,7 +25,7 @@ fun PreviewPage(
     previewPageViewModel: PreviewPageViewModel = viewModel(),
 ) {
     val uiState = previewPageViewModel.uiState.collectAsState().value
-    LazyColumn {
+    LazyColumn(modifier.fillMaxHeight()) {
         if (uiState.lastFilename.isNotEmpty()) {
             item {
                 val path = Uri.parse(uiState.lastFilename).path

@@ -1,5 +1,6 @@
 package com.lexx.presentation.ui.home_screen
 
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
@@ -49,7 +50,7 @@ fun HomeScreen(
     Scaffold(
         content = {
             NavigationLayout(
-                modifier.padding(it),
+                modifier.padding(it).fillMaxHeight(),
                 appNavigationType,
                 uiState.currentContent,
                 navigationItemContentList,

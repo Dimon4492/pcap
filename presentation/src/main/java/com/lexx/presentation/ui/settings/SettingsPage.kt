@@ -3,7 +3,9 @@ package com.lexx.presentation.ui.settings
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.selection.SelectionContainer
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
@@ -28,7 +30,11 @@ fun SettingsPage(
 
     val rowModifier = Modifier.padding(6.dp)
 
-    Column(modifier = modifier.padding(12.dp)) {
+    Column(
+        modifier = modifier
+            .padding(12.dp)
+            .verticalScroll(rememberScrollState())
+    ) {
         Row(rowModifier) {
             Text(text = stringResource(id = R.string.output_dir_uri_label))
             SelectionContainer {
