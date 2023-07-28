@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Picture Cap</string>
+    <string name="settings_label">Settings</string>
+    <string name="camera_label">Camera</string>
+    <string name="preview_label">Preview</string>
+    <string name="server_address_label">ServerAddress: </string>
+    <string name="username_label">"Login: "</string>
+    <string name="password_label">"Password: "</string>
+    <string name="share_name_label">Share name:</string>
+    <string name="output_directory_label">"Output directory: "</string>
+    <string name="filename_suffix_label">Filename suffix:</string>
+    <string name="output_dir_uri_label">"Output directory: "</string>
+    <string name="camera_permissions_required">Camera permission required</string>
+</resources>
